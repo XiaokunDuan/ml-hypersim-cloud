@@ -91,7 +91,7 @@ hypersim_full_backup.tar.gz
 *.tar.gz
 
 # Conda 环境文件 (可选，有时也需要版本控制)
-# 如果您想保留它，可以删除下面这一行
+# 如果您想保留它，可\以删除下面这一行
 hypersim_env_backup.yml
 
 # 检查脚本

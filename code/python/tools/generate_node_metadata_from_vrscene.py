@@ -40,7 +40,7 @@ if not os.path.exists(output_metadata_node_strings_dir): os.makedirs(output_meta
 
 
 
-renderer = vray.VRayRenderer()
+renderer = vray.VRayRenderer(False)
 def log_msg(renderer, message, level, instant):
     print(str(instant) + " " + str(level) + " " + message)
 renderer.setOnLogMessage(log_msg)

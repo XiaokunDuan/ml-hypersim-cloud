@@ -31,7 +31,7 @@ if not os.path.exists(output_dir): os.makedirs(output_dir)
 
 
 
-renderer = vray.VRayRenderer()
+renderer = vray.VRayRenderer(False)
 def log_msg(renderer, message, level, instant):
     print(str(instant) + " " + str(level) + " " + message)
 renderer.setOnLogMessage(log_msg)

@@ -119,7 +119,7 @@ for s in scenes:
     scene_file           = os.path.join(args.dataset_dir, "scenes", scene_name, "_asset_export", "scene.vrscene")
     vray_user_params_dir = args.dataset_dir
 
-    renderer = vray.VRayRenderer()
+    renderer = vray.VRayRenderer(False)
     def log_msg(renderer, message, level, instant):
         print(str(instant) + " " + str(level) + " " + message)
     renderer.setOnLogMessage(log_msg)

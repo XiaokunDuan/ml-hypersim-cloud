@@ -20,7 +20,7 @@ vrscene_file             = os.path.abspath(os.path.join(current_source_file_path
 
 
 # create renderer
-renderer = vray.VRayRenderer()
+renderer = vray.VRayRenderer(False)
 
 # create logging callback 
 def log_msg(renderer, message, level, instant):
