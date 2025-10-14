@@ -1,0 +1,103 @@
+__pycache__
+code/cpp/system_config.inc
+code/cpp/bin
+code/python/_system_config.py
+code/python/tools/libcgauth.dylib
+code/python/tools/libvray.dylib
+code/python/tools/libvrayopenimageio.dylib
+code/python/tools/libvrayosl.dylib
+code/python/tools/libVRaySDKLibrary.dylib
+code/python/tools/plugins
+contrib/mikeroberts3000/jupyter/.ipynb_checkpoints
+contrib/mikeroberts3000/jupyter/_tmp
+contrib/mikeroberts3000/python/libcgauth.dylib
+contrib/mikeroberts3000/python/libvray.dylib
+contrib/mikeroberts3000/python/libvrayopenimageio.dylib
+contrib/mikeroberts3000/python/libvrayosl.dylib
+contrib/mikeroberts3000/python/libVRaySDKLibrary.dylib
+contrib/mikeroberts3000/python/plugins
+
+# =================================================================
+# Hypersim 编译产物和缓存 (Compiled Artifacts & Caches)
+# =================================================================
+# Python 缓存文件
+__pycache__/
+*.pyc
+
+# C++ 编译输出目录
+code/cpp/bin/
+
+# Jupyter Notebook 缓存
+.ipynb_checkpoints/
+contrib/mikeroberts3000/jupyter/.ipynb_checkpoints
+
+# 临时文件
+contrib/mikeroberts3000/jupyter/_tmp/
+
+
+# =================================================================
+# 用户特定配置文件 (User-Specific Configurations)
+# 这些文件包含您本地机器的绝对路径，不应提交
+# =================================================================
+code/cpp/system_config.inc
+code/python/_system_config.py
+
+
+# =================================================================
+# V-Ray 依赖库 (V-Ray Dependencies)
+# 这些是您从 V-Ray 安装目录复制过来的大型二进制文件
+# =================================================================
+code/python/tools/libcgauth.dylib
+code/python/tools/libvray.dylib
+code/python/tools/libvrayopenimageio.dylib
+code/python/tools/libvrayosl.dylib
+code/python/tools/libVRaySDKLibrary.dylib
+code/python/tools/plugins/
+
+# Linux 对应的 .so 文件
+code/python/tools/libcgauth.so
+code/python/tools/libvray.so
+code/python/tools/libvrayopenimageio.so
+code/python/tools/libvrayosl.so
+code/python/tools/libVRaySDKLibrary.so
+code/python/tools/vray.so
+
+# Contrib 目录下的 V-Ray 文件
+contrib/mikeroberts3000/python/libcgauth.dylib
+contrib/mikeroberts3000/python/libvray.dylib
+contrib/mikeroberts3000/python/libvrayopenimageio.dylib
+contrib/mikeroberts3000/python/libvrayosl.dylib
+contrib/mikeroberts3000/python/libVRaySDKLibrary.dylib
+contrib/mikeroberts3000/python/plugins/
+
+
+# =================================================================
+# 大型数据和下载 (Large Data & Downloads)
+# 这些目录包含原始场景数据、下载的安装包等，体积巨大
+# =================================================================
+downloads/
+scenes/
+vray_installers/
+
+# 编译依赖的第三方库源码
+third_party/
+
+
+# =================================================================
+# 个人备份文件和环境文件 (Personal Backups & Environment Files)
+# =================================================================
+# 您自己创建的备份包
+hypersim_full_backup.tar.gz
+*.tar.gz
+
+# Conda 环境文件 (可选，有时也需要版本控制)
+# 如果您想保留它，可以删除下面这一行
+hypersim_env_backup.yml
+
+# 检查脚本
+check_*.sh
+final_check_all.sh
+
+# 其他通用忽略
+*.log
+.DS_Store
