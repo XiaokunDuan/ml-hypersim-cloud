@@ -116,10 +116,12 @@ if args.linear_rendering:
 
 
 
+# --- 修改后的代码 ---
 cmd = _system_config.vray_bin + \
     ' -sceneFile="' + scene_file   + '"' + \
     ' '             + img_file_str + \
     ' -frames='     + frames       + \
+    ' -display=0'   + \
     ' '             + parameter_override_str
 
 print("")

@@ -129,6 +129,40 @@ for s in scenes:
     out_file = os.path.abspath(os.path.join(tmp_dir, tmp_scene_fileroot + "_out.vrscene"))
     shutil.copy(in_file, out_file)
 
+    # ===============================================================================
+    # BEGIN CUSTOM MODIFICATION: Force replace known bad Windows paths
+    # ===============================================================================
+    print("[HYPERSIM: CUSTOM_MODIFICATION] Force replacing known bad Windows paths...")
+
+    # Define a list of known bad path prefixes
+    bad_windows_paths = [
+        "C:\\Users\\vipuser\\Documents\\Evermotion Archinteriors Vol.01\\Evermotion Archinteriors Vol.1\\01\\",
+        "D:\\GFX_3DS\\__work\\Decora\\rolety_papierowe\\el\\Lazienka_stuff\\",
+        "D:\\GFX_3DS\\__work\\Evermotion\\sceny\\vol6\\",
+        "C:\\01\\"
+    ]
+
+    # The correct relative path from the 'vrscenes' directory to the '_asset' directory
+    correct_relative_path = "../_asset/"
+
+    # Read the content of the copied vrscene file
+    with open(out_file, "r") as f:
+        content = f.read()
+
+    # Perform replacement for each bad path
+    for bad_path in bad_windows_paths:
+        # We need to escape backslashes for the replace function
+        content = content.replace(bad_path.replace('\\', '\\\\'), correct_relative_path)
+
+    # Write the modified content back to the file
+    with open(out_file, "w") as f:
+        f.write(content)
+
+    print("[HYPERSIM: CUSTOM_MODIFICATION] Finished replacing paths.")
+    # ===============================================================================
+    # END CUSTOM MODIFICATION
+    # ===============================================================================
+
     #
     # replace hard-coded paths with portable paths
     #

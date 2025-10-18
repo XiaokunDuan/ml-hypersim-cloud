@@ -23,7 +23,7 @@ def load_mtl_file(filename):
             print("[HYPERSIM: OBJ_FILE_UTILS] Begin load_mtl_file...")
             print("[HYPERSIM: OBJ_FILE_UTILS] Parsing " + filename + "...")
             
-            for line in open(filename, "r"):
+            for line in open(filename, "r", encoding="latin-1"):
                 
                 line = line.strip()
 
@@ -89,7 +89,7 @@ def load_obj_file(filename):
             print("[HYPERSIM: OBJ_FILE_UTILS] Begin load_obj_file...")
             print("[HYPERSIM: OBJ_FILE_UTILS] Parsing " + filename + "...")
 
-            for line in open(filename, "r"):
+            for line in open(filename, "r", encoding="latin-1"):
                 
                 line = line.strip()
 
@@ -176,6 +176,8 @@ def load_obj_file(filename):
                         print("[HYPERSIM: OBJ_FILE_UTILS] ERROR: Couldn't parse: " + " ".join(values))
                         material_name_curr = "_ERROR_MATERIAL"
                     self._material_names.append(material_name_curr)
+                elif values[0] == "s":
+                    pass
 
                 elif values[0] == "f":
 
