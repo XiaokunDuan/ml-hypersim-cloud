@@ -7,4 +7,4 @@ import os
 
 scenes = []
 
-scenes.append({"name": "ai_001_001", "archive_file": "AI1_001.rar", "asset_file": "01", "normalization_policy": "v0", "scene_extent_meters": 10.0, "voxel_extent_meters": 0.1})
+scenes.append({"name": "ai_001_003", "archive_file": "AI1_003.rar", "asset_file": "03", "normalization_policy": "v0", "scene_extent_meters": 10.0, "voxel_extent_meters": 0.1})
