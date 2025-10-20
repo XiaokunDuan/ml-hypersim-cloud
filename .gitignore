@@ -81,7 +81,7 @@ vray_installers/
 
 # 编译依赖的第三方库源码
 third_party/
-
+examples/
 
 # =================================================================
 # 个人备份文件和环境文件 (Personal Backups & Environment Files)
@@ -101,3 +101,19 @@ final_check_all.sh
 # 其他通用忽略
 *.log
 .DS_Store
+
+# 忽略图片文件
+*.jpg
+*.png
+
+# 忽略 V-Ray 渲染文件
+*.vrimg
+
+# 忽略 HDF5 数据文件
+*.hdf5
+*.exr
+
+# 如果还有其他类型，继续添加
+*.vrscene
+*.txt
+*.
